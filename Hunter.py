@@ -5,44 +5,19 @@ from rich import print
 from concurrent.futures import ThreadPoolExecutor
 from rich.tree import Tree
 from rich.console import Console
-
+import os
+    folder_name = "Data"
+    if not os.path.exists(folder_name):
+    os.makedirs(folder_name)
+    print(f"Folder '{folder_name}' created.")
+else:
+    print(f"Folder '{folder_name}' already exists.")
 ### LIST DUMP ###
 Dump = []
 ### BANNER OR LOGO ###
 def banner_logo():
     os.system('cls' if os.name == 'nt' else 'clear') # Coded by Hnter
-   
-
-# Define folder names
-import os
-
-# Define folder name
-folder_name = "Data"
-
-# Check if the folder already exists
-if not os.path.exists(folder_name):
-    # Create the folder
-    os.makedirs(folder_name)
-    print(f"Folder '{folder_name}' created.")
-else:
-    print(f"Folder '{folder_name}' already exists.")
-
-
-# Check if the folders already exist
-if not os.path.exists(data_folder):
-    # Create the 'Data' folder
-    os.makedirs(data_folder)
-    print("Folder 'Data' created.")
-else:
-    print("Folder 'Data' already exists.")
-
-if not os.path.exists(results_folder):
-    # Create the 'Results' folder
-    os.makedirs(results_folder)
-    print("Folder 'Results' created.")
-else:
-    print("Folder 'Results' already exists.")
-
+    
     Console(width=50, style="bold hot_pink2").print(Panel("""[bold red]●[bold yellow] ●[bold green] ●
   _    _ _    _ _   _ _______ ______ _____  
  | |  | | |  | | \ | |__   __|  ____|  __ \ 
