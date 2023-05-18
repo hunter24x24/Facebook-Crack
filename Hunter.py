@@ -11,7 +11,8 @@ Dump = []
 ### BANNER OR LOGO ###
 def banner_logo():
     os.system('cls' if os.name == 'nt' else 'clear') # Coded by Hnter
-     import os
+    import os
+    
 # Define folder names
 data_folder = "Data"
 results_folder = "Results"
