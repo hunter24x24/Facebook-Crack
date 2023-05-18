@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Create Data folder if it doesn't exist
 if [ ! -d "Data" ]; then
     mkdir Data
@@ -12,4 +13,4 @@ if [ ! -d "Results" ]; then
 fi
 
 # Run Python script
-python3 Hunter.py
+python your_script.py
