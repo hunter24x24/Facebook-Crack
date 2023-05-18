@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Create Data folder if it doesn't exist
 if [ ! -d "Data" ]; then
     mkdir Data
