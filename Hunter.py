@@ -11,8 +11,8 @@ Dump = []
 ### BANNER OR LOGO ###
 def banner_logo():
     os.system('cls' if os.name == 'nt' else 'clear') # Coded by Hnter
-    os.mkdir(Data)
-    os.mkdir(Results)
+    os.mkdir('Data')
+    os.mkdir('Results')
     Console(width=50, style="bold hot_pink2").print(Panel("""[bold red]●[bold yellow] ●[bold green] ●
   _    _ _    _ _   _ _______ ______ _____  
  | |  | | |  | | \ | |__   __|  ____|  __ \ 
