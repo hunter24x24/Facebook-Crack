@@ -10,7 +10,28 @@ from rich.console import Console
 Dump = []
 ### BANNER OR LOGO ###
 def banner_logo():
-    os.system('cls' if os.name == 'nt' else 'clear') # Coded by Hunter
+    os.system('cls' if os.name == 'nt' else 'clear') # Coded by Hnter
+    import os
+
+# Define folder names
+data_folder = "Data"
+results_folder = "Results"
+
+# Check if the folders already exist
+if not os.path.exists(data_folder):
+    # Create the 'Data' folder
+    os.makedirs(data_folder)
+    print("Folder 'Data' created.")
+else:
+    print("Folder 'Data' already exists.")
+
+if not os.path.exists(results_folder):
+    # Create the 'Results' folder
+    os.makedirs(results_folder)
+    print("Folder 'Results' created.")
+else:
+    print("Folder 'Results' already exists.")
+
     Console(width=50, style="bold hot_pink2").print(Panel("""[bold red]●[bold yellow] ●[bold green] ●
   _    _ _    _ _   _ _______ ______ _____  
  | |  | | |  | | \ | |__   __|  ____|  __ \ 
