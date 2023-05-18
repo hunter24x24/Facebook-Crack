@@ -13,4 +13,4 @@ if [ ! -d "Results" ]; then
 fi
 
 # Run Python script
-python your_script.py
+python3 Hunter.py
