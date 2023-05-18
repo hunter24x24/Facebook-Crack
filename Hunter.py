@@ -11,11 +11,22 @@ Dump = []
 ### BANNER OR LOGO ###
 def banner_logo():
     os.system('cls' if os.name == 'nt' else 'clear') # Coded by Hnter
-    import os
+   
 
 # Define folder names
-data_folder = "Data"
-results_folder = "Results"
+import os
+
+# Define folder name
+folder_name = "Data"
+
+# Check if the folder already exists
+if not os.path.exists(folder_name):
+    # Create the folder
+    os.makedirs(folder_name)
+    print(f"Folder '{folder_name}' created.")
+else:
+    print(f"Folder '{folder_name}' already exists.")
+
 
 # Check if the folders already exist
 if not os.path.exists(data_folder):
