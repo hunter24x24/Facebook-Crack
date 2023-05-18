@@ -10,7 +10,11 @@ from rich.console import Console
 Dump = []
 ### BANNER OR LOGO ###
 def banner_logo():
-    os.system('cls' if os.name == 'nt' else 'clear') # Coded by Rozhak
+    os.system('cls' if os.name == 'nt' else 'clear') # Coded by Hnter
+    new_dir_path = 'Data'
+    os.mkdir(new_dir_path)
+    new_dir_Results = 'Results'
+    os.mkdir(new_dir_Results)
     Console(width=50, style="bold hot_pink2").print(Panel("""[bold red]●[bold yellow] ●[bold green] ●
   _    _ _    _ _   _ _______ ______ _____  
  | |  | | |  | | \ | |__   __|  ____|  __ \ 
